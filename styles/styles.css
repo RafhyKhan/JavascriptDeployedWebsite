@@ -85,7 +85,7 @@ a:hover {
 
 
 /* Hovering elements in the two classes*/
-.fake-button .blue-hover a:hover {
+.fake-button:hover, .blue-hover:hover {
     text-decoration: underline;
     background-color: blue;
     color: white;
@@ -139,6 +139,9 @@ footer {
     height: 110px;
     font-weight: 200;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*works? */ 
     align-items: center;
     background-color: #E5AF42;
 }
@@ -163,9 +166,13 @@ footer {
 
 
 .index {
+    display: wrap;
     flex-wrap: wrap;
-    flex-direction: row;
 
+}
+
+.index .about-us {
+    flex:1;
 }
 
 .index img {
