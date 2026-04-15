@@ -20,18 +20,18 @@ var dayChangeAction = document.getElementById("calculated-cost");
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
 
-for (var counter = 0; counter < dayChangeButton.length; counter++) {
-    dayChangeButton[counter].addEventListener('click', function(e) {
-        if (e.target.classList.contains("clicked")) {
-            e.target.classList.remove("clicked");
-            dayCounter = dayCounter - 1;
-        } else {
-            e.target.classList.add("clicked");
-            dayCounter = dayCounter + 1;
-        }
-        calculate();
+dayChangeButton.forEach(function(day) {
+    day.addEventListener('click', function() {
+      if (this.classList.contains("clicked")) {
+          this.classList.remove("clicked");
+          dayCounter = dayCounter - 1;
+      } else {
+          this.classList.add("clicked");
+          dayCounter = dayCounter + 1;
+      }
+      calculate();
     });
-}
+});
 
 
 
@@ -66,7 +66,7 @@ var halfDayFunction = function () {
   fullButton.classList.remove("clicked");
   costPerDay = 20;
   calculate();
-}
+};
 
 halfDayButton.addEventListener('click', halfDayFunction);
 

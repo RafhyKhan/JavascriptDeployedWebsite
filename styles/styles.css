@@ -66,14 +66,7 @@ h2 {
 }
 
 
-.fake-button {
-    background-color: #E5AF42;
-    align-content: center;
-    line-height: 3;
-    border: 1px solid black;
-}
-
-
+/**links styling**/
 a {
     text-decoration: none;
     color: black;
@@ -84,6 +77,15 @@ a:hover {
     text-decoration: underline;
 }
  
+
+/**buttons styling**/
+.fake-button {
+    background-color: #E5AF42;
+    align-content: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+
 
 .fake-button:hover, .blue-hover:hover {
     text-decoration: underline;
@@ -117,6 +119,13 @@ header {
 }
 
 
+header h1 {
+    text-align: center;
+    margin-top: 45px;
+    width: 800px;
+}
+
+
 header img {
     width: 100px;
     height: 100px;
@@ -126,22 +135,14 @@ header img {
 }
 
 
-header h1 {
-    text-align: center;
-    margin-top: 45px;
-    width: 800px;
-}
-
-
 footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px; /*Align with screenshot image*/
+    padding-bottom: 25px;
     height: 60px;
     font-weight: 200;
-    text-align: center;
-    display: flex;
+    display: flex; /*centering text*/
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     background-color: #E5AF42;
     margin-top: 50px;
@@ -165,12 +166,29 @@ footer {
 .index {
     display: flex;
     flex-wrap: wrap;
-
 }
 
+
+.index h2 {
+    line-height: 36px;
+}
+
+
+.index p {
+    margin-bottom: 12px;
+}
+
+
+/**index page classes styling**/
 .index .about-us {
     flex:1;
 }
+
+
+.index .large-text {
+    text-align: center;
+}
+
 
 .index img {
     width: 300px;
@@ -178,23 +196,14 @@ footer {
     margin-bottom: 50px;
 }
 
-.index h2 {
-    line-height: 36px;
-}
 
-.index p {
-    margin-bottom: 12px;
-}
-
+/**button styling**/
 .index .fake-button {
     width: 250px;
     margin-left: 150px;
     align-items: center;
 }
 
-.index .large-text {
-    text-align: center;
-}
 
 .index button {
     align-content: center;
@@ -229,6 +238,7 @@ footer {
     margin-bottom: 50px;
 }
 
+
 .booking-page p {
     font-size: 18px;
 }
@@ -239,6 +249,7 @@ footer {
     justify-content: center;
 }
 
+
 .day-selector li {
     margin: 10px;
     width: 60px;
@@ -248,10 +259,16 @@ footer {
 }
 
 
-
 .top-margin {
     margin-top: 24px;
     margin-bottom: 12px;
+}
+
+
+/**button styling**/
+.booking-page .fake-button{
+    width: 200px;
+    margin: 0 auto;
 }
 
 
@@ -260,20 +277,10 @@ footer {
     border: 1px solid black;
 }
 
-.booking-page .fake-button{
-    width: 200px;
-    margin: 0 auto;
-}
-
 
 .clicked {
     background-color: #E5AF42;
 }
-
-
-
-
-
 
 
 /************* contact page *************/
@@ -298,20 +305,30 @@ footer {
     margin: 0 auto;
 }
 
+.contact input {
+    width: 300px;
+}
+
+
 .contact label {
     width: 150px;
     text-align: right;
     margin-right: 24px;
 }
 
-.contact input {
-    width: 300px;
-}
 
 .contact textarea {
     height: 150px;
     width: 300px;
 }
+
+
+.contact button {
+    margin-left:174px;
+    width: 306px;
+    height: 50px;
+}
+
 
 .contact input, .contact textarea, .contact button {
     font-family: 'Montserrat', sans-serif;
@@ -320,13 +337,6 @@ footer {
     border: 1px solid black;
     margin-bottom: 24px;
 }
-
-.contact button {
-    margin-left:174px;
-    width: 306px;
-    height: 50px;
-}
-
 
 
 
