@@ -66,6 +66,7 @@ h2 {
     font-size: 24px;
 }
 
+
 .fake-button {
     background-color: #E5AF42;
     align-content: center;
@@ -74,20 +75,22 @@ h2 {
 
 }
 
+
 a {
     text-decoration: none;
+    color: black;
 
 }
+
 
 a:hover {
     text-decoration: underline;
 }
+ 
 
-
-/* Hovering elements in the two classes*/
 .fake-button:hover, .blue-hover:hover {
     text-decoration: underline;
-    background-color: blue;
+    background-color: #4278e5;
     color: white;
     cursor: pointer;
 }
@@ -135,8 +138,8 @@ header h1 {
 
 
 footer {
-    /*padding-top: 50px;*/
-    height: 110px;
+    padding-top: 50px;
+    height: 60px;
     font-weight: 200;
     text-align: center;
     display: flex;
@@ -144,6 +147,7 @@ footer {
     justify-content: center; /*works? */ 
     align-items: center;
     background-color: #E5AF42;
+    margin-top: 50px;
 }
 
 
@@ -166,7 +170,7 @@ footer {
 
 
 .index {
-    display: wrap;
+    display: flex;
     flex-wrap: wrap;
 
 }
@@ -191,13 +195,17 @@ footer {
 
 .index .fake-button {
     width: 250px;
-    margin: 75px;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.index .large-text {
+    text-align: center;
 }
 
 .index button {
     align-content: center;
 }
-
 
 
 
@@ -221,25 +229,32 @@ footer {
 */
 
 
-
 .booking-page {
     width: 600px;
-    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .booking-page p {
     font-size: 18px;
 }
 
-.flex day-selector {
-    margin: 10px;
-    padding-bottom: 12px;
-    width: 60px;
+
+.day-selector {
+    margin-bottom: 12px;
+    justify-content: center;
 }
 
-.booking-page li button {
+.day-selector li {
+    margin: 10px;
+    width: 60px;
     border: 1px solid black;
+    text-align: center;
+    line-height: 2.5;
 }
+
+
 
 .top-margin {
     margin-top: 24px;
@@ -247,6 +262,20 @@ footer {
 }
 
 
+.small-button {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.booking-page .fake-button{
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 
@@ -270,8 +299,41 @@ footer {
 
 .contact {
     height: 420px;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
+
+.contact label {
+    width: 150px;
+    text-align: right;
+    margin-right: 24px;
+}
+
+.contact input {
+    width: 300px;
+}
+
+.contact textarea {
+    height: 150px;
+    width: 300px;
+}
+
+.contact input, .contact textarea, .contact button {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.contact button {
+    margin-left:174px;
+    width: 306px;
+    height: 50px;
+}
+
 
 
 
