@@ -6,7 +6,7 @@
 
 var submitButton = document.querySelector('#submit-button');
 
-var submitFunction = function () {
+var submitFunction = function (e) {
     e.preventDefault(); //To stop form from submitting everytime
     const submitChange = document.getElementById("contact-page");
     submitChange.innerHTML = "<p style='font-size: 24px;'>Thank you for your message!</p>"
